@@ -17,6 +17,9 @@ def menuSelect():
         print(vatCaculate(float(input("Price (THB) : "))))
     elif userSelected == 2:
         print(priceCalculate())
+    else :
+        print("press serect 1 or 2")
+        menuSelect()
 def vatCaculate(totalPrice):
     vat = 7
     return totalPrice + (totalPrice * vat / 100)
